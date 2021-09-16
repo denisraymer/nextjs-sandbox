@@ -1,0 +1,22 @@
+{
+  "news": [
+    {
+      "id": 413,
+      "title": "News title",
+      "description": "News content",
+      "content": "Чтобы использовать React с TypeScript, вы должны внести небольшие изменения в подходе создания стандартного приложения React."
+    },
+    {
+      "id": 212,
+      "title": "News title",
+      "description": "News important content",
+      "content": "В дополнение к новому расширению файлов .ts для TypeScript есть также новое расширение файла .tsx. Это расширение, которое вы должны использовать каждый раз, когда включаете синтаксис JSX в файл компонента React. TypeScript способен компилировать JSX напрямую в JavaScript."
+    },
+    {
+      "id": 645,
+      "title": "News title",
+      "description": "News very good content",
+      "content": "Далее, мы объявляем тип входного параметра как IProps, ссылающийся на созданный нами интерфейс."
+    }
+  ]
+}
