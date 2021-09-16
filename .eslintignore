@@ -1,0 +1,10 @@
+node_modules
+build
+__generated__.ts
+config
+scripts
+*.d.ts
+webpack.config.js
+jest.config.js
+*.js
+*.test.*
