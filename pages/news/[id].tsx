@@ -1,10 +1,13 @@
 import styles from '../../styles/Home.module.scss';
 import Link from 'next/link';
 import { MainLayout } from '../../layouts';
+import { IGetInitialProps, INewsContent } from '../../types';
 
-export default function Post({
-  news
-}) {
+interface INews {
+  news: INewsContent;
+}
+
+export default function Post({news}: INews) {
   return (
     <MainLayout pageTitle="Name news">
       <main className={styles.main}>
@@ -24,9 +27,9 @@ export default function Post({
   );
 }
 
-Post.getInitialProps = async ({ query }) => {
+Post.getInitialProps = async ({query}: IGetInitialProps) => {
   const response = await fetch(`http://localhost:3200/news/${query.id}`);
-  const news = await response.json();
+  const news: INews = await response.json();
 
-  return { news };
+  return {news};
 };
